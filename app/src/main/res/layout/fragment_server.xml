@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.mobileappclass.assignment3.ServerFragment">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Server Database"
+    android:gravity="center"
+    android:textSize="25sp"
+    android:layout_margin="10sp"/>
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/serverList"
+    android:layout_weight="1.6"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="5sp"
+            android:text="Server Status:"
+            android:textSize="20sp"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/background"
+            android:id="@+id/serverStatus"
+            android:text="Not Connected"
+            android:textSize="20sp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="5sp"
+            android:text="Network Type:"
+            android:textSize="20sp"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/background"
+            android:id="@+id/networkType"
+            android:text="Mobile Network"
+            android:textSize="20sp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginLeft="25sp"
+            android:text="Sync"
+            android:textSize="20sp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:id="@+id/syncButton"
+            android:onClick="syncClick"/>
+
+    </GridLayout>
+
+</LinearLayout>
+
+</LinearLayout>
